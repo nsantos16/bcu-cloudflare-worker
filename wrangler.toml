@@ -1,0 +1,15 @@
+name = "bcu-exchange"
+type = "javascript"
+zone_id = ""
+account_id = "1e25cb5eae8e6b2c27b89f08e5697e48"
+route = ""
+workers_dev = true
+compatibility_date = "2021-09-19"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[env.production]
+route="/bcu"
